@@ -1,20 +1,111 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+
+<!--
+<html data-ng-app="customersApp">
+-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>AngularJS+RequireJS+NodeJS Seed project(0.0.1)</title>
-    </head>
-    <body>
-        <!-- Content -->
-        <!-- you can use ng-view when using ngRouter -->
-        <div ng-view></div>
-        <div ui-view></div>
-        <!--just for aref we can jump by URL directly without problem-->
-        <a ui-sref="home">home</a>
-        <a ui-sref="state1">state1</a>
-        <a ui-sref="state2">state2</a>
-        
-        <!-- requirejs -->
-        <script data-main="./public/js/require-config" src="./public/js/vendor/requirejs/require.js"></script>
-    </body>
+<head>
+    <title>Customer Manager</title>
+    <link href="public/stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="public/stylesheets/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="public/stylesheets/css/customerManagementStyles.css" rel="stylesheet" />
+    
+    
+</head>
+<body>
+    
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                
+                <a class="brand" ui-sref="home">
+                    <img src="public/img/people.png" alt="logo"> Customer Manager
+                </a>
+                
+                <ul class="nav nav-pills">
+                    <li><a ui-sref="customers">Customers</a></li>
+                    <li><a ui-sref="orders">Orders</a></li>
+                </ul>
+                <!--
+                <a class="brand" href="#/">
+                    <img src="public/img/people.png" alt="logo"> Customer Manager
+                </a>
+                
+                <ul class="nav nav-pills" data-ng-controller="NavbarController">
+                    <li data-ng-class="{'active':getClass('/customers')}"><a href="#/customers">Customers</a></li>
+                    <li data-ng-class="{'active':getClass('/orders')}"><a href="#/orders">Orders</a></li>
+                </ul>
+                -->
+            </div>
+        </div>
+    </div>
+    <script></script>
+    
+    <!-- Note that AngularJS 1.2+ now has a built-in ng-animation direction. Left in animated-view to show a 
+         custom directive -->
+    
+    <div ui-view></div>
+    
+    <div id="footer">
+        <div class="navbar navbar-fixed-bottom">
+            <div class="navbar-inner">
+                <div class="container">
+                    <footer>
+                        <div class="row">
+                            <div class="span4">
+                                Created by Kuan Cao
+                            </div>
+                            <div class="span4">
+                                LinkedIn: <a href="https://www.linkedin.com/pub/kuan-cao/68/961/55a">@Kuan Cao</a>
+                            </div>
+                        </div>
+                   </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script data-main="./public/js/require-config" src="./public/js/vendor/requirejs/require.js"></script>
+    
+    <!--
+    <script src="public/js/vendor/angular/angular.js"></script>
+    <script src="public/js/vendor/angular/angular-ui-router.js"></script>
+    
+    <script src="public/js/UI/jquery-2.1.1.min.js"></script>
+    <script src="public/js/UI/bootstrap.js"></script>
+    <script src="public/js/app/app.js"></script>
+    <script src="public/js/controllers/controllers.js"></script>
+    <script src="public/js/services/customersService.js"></script>
+    -->
+    
+</body>
 </html>
+
+
+
+    <!--
+    <script src="app/services/sqlconn.js">
+    -->
+
+    <!--
+    <script src="Scripts/angular-route.js"></script>
+    -->
+    
+    <!-- 
+   
+    Vendor Libs: jQuery only used for Bootstrap functionality 
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/jquery.min.js"></script>
+
+    UI Libs 
+    <script src="Scripts/bootstrap.js"></script>
+
+
+    App libs
+    <script src="app/app.js"></script>
+    <script src="app/controllers/controllers.js"></script>
+    <script src="app/services/customersService.js"></script>
+    <script src="app/directives/animatedView.js"></script>
+    
+    -->

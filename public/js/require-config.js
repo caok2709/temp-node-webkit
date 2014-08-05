@@ -5,12 +5,9 @@ requirejs.config({
     'angular-route':            'public/js/vendor/angular/angular-route',
     'angular-ui-router':        'public/js/vendor/angular/angular-ui-router',
     
-    'controllerList':           'public/js/controllerList',
     'jquery':                   'public/js/UI/jquery.min',
     'bootstrap':                'public/js/UI/bootstrap',
     
-    'App':                      'public/js/app',
-    'require':                  'pubilc/js/vendor/requirejs/require',
     'domReady':                 'public/js/vendor/requirejs/require-domReady'
     //indluce your own paths here:
   },
@@ -21,7 +18,9 @@ requirejs.config({
     },
     'angular-route':        ['angular'],
     'angular-ui-router':    ['angular'],
-    
+    'bootstrap': {
+        deps:['jquery']
+    },
     "jquery.alpha":         ["jquery"],
     "jquery.beta":          ["jquery"]
   }    

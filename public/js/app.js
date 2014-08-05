@@ -6,10 +6,13 @@
 define([
       'angular',
       './config',
-      './controllerList',    
+      //'./../js/controllers/controllerList'
+      './controllerList'
     ], function (ng) {
       'use strict';
-      return ng.module('app', [
+      
+      //return ng.module('app', [
+      return ng.module('customersApp', [
           'app.constants',
           'app.home',
           'ui.router'//'ngRoute'

@@ -5,9 +5,11 @@
 
 define(
         [
-        'public/js/controllers/home-ctrl',
-        'public/js/controllers/state1-list-ctrl',
-        'public/js/controllers/state2-list-ctrl',
-        ], 
-        function () {
-});
+        'public/js/controllers/CustomersController',
+        'public/js/controllers/CustomerOrdersController',
+        'public/js/controllers/OrdersController',
+        'public/js/controllers/NavbarController',
+        'public/js/controllers/OrderChildController',
+        ],
+        function () {}
+);
